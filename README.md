@@ -36,10 +36,10 @@ Create a private GitLab repository on my personal account.
 
 ### Step 3:
 Work on the Models 
-Generate all of the tables with the appropriate generator for Tweets and Replies
+Generate all of the tables with the appropriate generator for Tweets
 
 ### Step 4:
-Set up associations and add validations to the Tweets and Replies
+Set up associations and add validations to the Tweets
 Make sure the relationship between models are correct
 
 ### Step 5:
