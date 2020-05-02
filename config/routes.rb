@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :tweets
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-
-  devise_for :users
+  devise_for :users, :path => 'accounts'
+  resources :user do
+    resources :tweets
+  end
 end
