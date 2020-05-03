@@ -1,6 +1,6 @@
 class TweetsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_tweet, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index, :show]
 
   # GET /tweets
   # GET /tweets.json
@@ -15,7 +15,8 @@ class TweetsController < ApplicationController
 
   # GET /tweets/new
   def new
-    @tweet = Tweet.new
+    @user = current_user.find(params[:user_id])
+    @tweet = @user.tweets.build
   end
 
   # GET /tweets/1/edit
@@ -25,11 +26,12 @@ class TweetsController < ApplicationController
   # POST /tweets
   # POST /tweets.json
   def create
-    @tweet = Tweet.new(tweet_params)
+    @user = current_user.find(params[:user_id])
+    @tweet = @user.tweets.build(tweet_params)
 
     respond_to do |format|
       if @tweet.save
-        format.html { redirect_to @tweet, notice: 'Tweet was successfully created.' }
+        format.html { redirect_to user_tweet_path(@user, @tweet), notice: 'Tweet was successfully created.' }
         format.json { render :show, status: :created, location: @tweet }
       else
         format.html { render :new }
@@ -43,7 +45,7 @@ class TweetsController < ApplicationController
   def update
     respond_to do |format|
       if @tweet.update(tweet_params)
-        format.html { redirect_to @tweet, notice: 'Tweet was successfully updated.' }
+        format.html { redirect_to user_tweet_path(@tweet.user, @tweet), notice: 'Tweet was successfully updated.' }
         format.json { render :show, status: :ok, location: @tweet }
       else
         format.html { render :edit }

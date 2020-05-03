@@ -16,9 +16,9 @@
       <tr>
         <td><%= tweet.user_id %></td>
         <td><%= tweet.tweet %></td>
-        <td><%= link_to 'Show', tweet %></td>
-        <td><%= link_to 'Edit', edit_tweet_path(tweet) %></td>
-        <td><%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', user_tweet_path(tweet.user, tweet) %></td>
+        <td><%= link_to 'Edit', edit_user_tweet_path(tweet.user, tweet) %></td>
+        <td><%= link_to 'Destroy', user_tweet_path(tweet.user, tweet), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Tweet', new_tweet_path %>
+<%= link_to 'New Tweet', new_user_tweet_path %>
