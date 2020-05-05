@@ -15,7 +15,7 @@ class TweetsController < ApplicationController
 
   # GET /tweets/new
   def new
-    @user = current_user.find(params[:user_id])
+    @user = current_user
     @tweet = @user.tweets.build
   end
 
@@ -26,7 +26,7 @@ class TweetsController < ApplicationController
   # POST /tweets
   # POST /tweets.json
   def create
-    @user = current_user.find(params[:user_id])
+    @user = current_user
     @tweet = @user.tweets.build(tweet_params)
 
     respond_to do |format|

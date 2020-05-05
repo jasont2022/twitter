@@ -28,7 +28,7 @@
       </div>
     <% end %>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-4">
+    <nav class="navbar navbar-expand-sm navbar-light mb-4" style="background-color: #e3f2fd;">
       <div class="container">
         <%= link_to 'Twitter', "/", class: 'navbar-brand' %>
 
@@ -40,13 +40,13 @@
           <ul class="navbar-nav ml-auto">
             <!-- Should only be seen if logged in-->
               <% if user_signed_in? %>
-                <li class="nav-item"><%= link_to 'Find Users', "/users", class: 'nav-link' %></li>
-                <li class="nav-item"><%= link_to 'My Profile', "/user_path(current_user.id)", class: 'nav-link' %></li>
+                <li class="nav-item"><%= link_to 'Find Users', "/users", method: :get, class: 'nav-link' %></li>
+                <li class="nav-item"><%= link_to 'My Profile', "/users/#{current_user.id}", method: :get, class: 'nav-link' %></li>
                 <li class="nav-item"><%= link_to 'Log Out', '/accounts/sign_out', method: :delete, class: 'nav-link' %></li>
             <!-- Should only be seen if NOT logged in -->
               <% else %>
-                <li class="nav-item"><%= link_to 'Sign Up', "/accounts/sign_up", class: "nav-link" %></li>
-                <li class="nav-item"><%= link_to 'Log In', '/accounts/sign_in', class: "nav-link" %></li>
+                <li class="nav-item"><%= button_to 'Log In', '/accounts/sign_in', method: :get, class: "btn btn-outline-primary" %></li>
+                <li class="nav-item"><%= button_to 'Sign Up', "/accounts/sign_up", method: :get, class: "btn btn-primary" %></li>
               <% end %>
           </ul>
         </div>

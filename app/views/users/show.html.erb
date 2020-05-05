@@ -1,4 +1,20 @@
-<h1>My Profile</h1>
+<% if @user == current_user %>
+    <h2>My Profile</h2>
+<% else %>
+    <h2>User Profile</h2>
+<% end %>
+<p>
+  <strong><%= @user.name%></strong>
+</p>
+<p>
+  <%= @user.username %>
+</p>
+<p>
+  <%= @user.email %>
+</p>
 
-<%= link_to 'Edit', '/accounts/edit' %> |
+<% if @user == current_user %>
+  <%= link_to 'Edit', '/accounts/edit' %>
+<% end %>
 <%= link_to 'Back', users_path %>
+
