@@ -1,12 +1,25 @@
-<p>
-  <strong>User:</strong>
-  <%= @tweet.user_id %>
-</p>
-
-<p>
-  <strong>Tweet:</strong>
-  <%= @tweet.tweet %>
-</p>
-
-<%= link_to 'Edit', edit_user_tweet_path(@tweet.user, @tweet) %> |
-<%= link_to 'Back', user_tweets_path(@tweet.user) %>
+<div class="section">
+  <div class="container">
+    <h2 class="title is-2 text-center">Tweet</h2>
+    <div class="card border-primary mb-3" style="max-width: 18rem;">
+      <div class="card-body text-primary">
+        <% if @user.avatar.attached? %>
+          <%= link_to user_path(@user) do %>
+            <img src="<%= url_for(@user.avatar) %>%"/>
+          <% end %>
+        <% else %>
+          <%= link_to user_path(@user) do %>
+            <%= image_tag("avatar.jpg") %>
+          <% end %>
+        <% end %>
+        <p><strong><%= @user.name%></strong></p>
+        <p> <%= @user.username %> </p>
+        <p class="card-text"> <%= @tweet.tweet %></p>
+        <% if @user == current_user %>
+            <td><%= link_to 'Destroy', user_tweet_path(@tweet.user, @tweet), method: :delete, data: { confirm: 'Are you sure?' }, class: "card-link" %></td>
+        <% end %>
+      </div>
+    </div>
+    <%= link_to 'Back', user_tweets_path(@tweet.user), class: "nav-link" %>
+  </div>
+</div>

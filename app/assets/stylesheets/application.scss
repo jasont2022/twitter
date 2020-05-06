@@ -15,11 +15,18 @@
  */
  @import "bootstrap";
 
- .alert {
+.alert {
      margin-bottom: 0;
  }
 
 .nav-item {
     margin-right: 10px;
     margin-left: 10px;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 0px;
 }

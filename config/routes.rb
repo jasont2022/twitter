@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   devise_for :users, :path => 'accounts'
 
   resources :users, :only => [:index, :show] do
-    resources :tweets
+    resources :tweets, :only => [:show, :create, :destroy]
   end
 end

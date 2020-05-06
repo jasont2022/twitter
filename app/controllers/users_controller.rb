@@ -11,8 +11,9 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    @tweets = @user.tweets
   end
-
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
@@ -21,7 +22,7 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:name, :username, :email)
+      params.require(:user).permit(:name, :username, :email, :avatar)
     end
 
     def check_user

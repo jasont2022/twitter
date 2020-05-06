@@ -1,54 +1,25 @@
 class TweetsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_tweet, only: [:show, :edit, :update, :destroy]
-
-  # GET /tweets
-  # GET /tweets.json
-  def index
-    @tweets = Tweet.all
-  end
+  before_action :set_tweet, only: [:show, :destroy]
 
   # GET /tweets/1
   # GET /tweets/1.json
   def show
-  end
-
-  # GET /tweets/new
-  def new
     @user = current_user
-    @tweet = @user.tweets.build
-  end
-
-  # GET /tweets/1/edit
-  def edit
   end
 
   # POST /tweets
   # POST /tweets.json
   def create
     @user = current_user
-    @tweet = @user.tweets.build(tweet_params)
+    @tweet = @user.tweets.new(tweet_params)
 
     respond_to do |format|
       if @tweet.save
-        format.html { redirect_to user_tweet_path(@user, @tweet), notice: 'Tweet was successfully created.' }
+        format.html { redirect_to '/', notice: 'Tweet was successfully created.' }
         format.json { render :show, status: :created, location: @tweet }
       else
-        format.html { render :new }
-        format.json { render json: @tweet.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # PATCH/PUT /tweets/1
-  # PATCH/PUT /tweets/1.json
-  def update
-    respond_to do |format|
-      if @tweet.update(tweet_params)
-        format.html { redirect_to user_tweet_path(@tweet.user, @tweet), notice: 'Tweet was successfully updated.' }
-        format.json { render :show, status: :ok, location: @tweet }
-      else
-        format.html { render :edit }
+        format.html { redirect_to '/' }
         format.json { render json: @tweet.errors, status: :unprocessable_entity }
       end
     end
@@ -59,7 +30,7 @@ class TweetsController < ApplicationController
   def destroy
     @tweet.destroy
     respond_to do |format|
-      format.html { redirect_to tweets_url, notice: 'Tweet was successfully destroyed.' }
+      format.html { redirect_to '/', notice: 'Tweet was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

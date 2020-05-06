@@ -6,17 +6,17 @@
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
 
-      <div class="field form-group">
+      <div class="field form-group row">
         <%= f.label :name %><br />
         <%= f.text_field :name, autofocus: true, class: "form-control"  %>
       </div>
 
-      <div class="field form-group">
+      <div class="field form-group row">
         <%= f.label :username %><br />
         <%= f.text_field :username, autofocus: true, class: "form-control"  %>
       </div>
 
-      <div class="field form-group">
+      <div class="field form-group row">
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control"  %>
       </div>
@@ -25,7 +25,7 @@
         <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
       <% end %>
 
-      <div class="field form-group">
+      <div class="field form-group row">
         <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
         <%= f.password_field :password, autocomplete: "new-password", class: "form-control"  %>
         <% if @minimum_password_length %>
@@ -33,17 +33,23 @@
         <% end %>
       </div>
 
-      <div class="field form-group">
+      <div class="field form-group row">
         <%= f.label :password_confirmation %><br />
         <%= f.password_field :password_confirmation, required: false, autocomplete: "new-password", class: "form-control"  %>
       </div>
 
-      <div class="field form-group">
+      <div class="field form-group row">
         <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
         <%= f.password_field :current_password, required: true, autocomplete: "current-password", class: "form-control"  %>
       </div>
 
-    
+      <div class="field form-group row">
+        <div class="custom-file">
+          <%= f.file_field :avatar, class: "custom-file-input" %>
+          <%= f.label :avatar, class: "custom-file-label"%>
+        </div>
+      </div>
+
       <div class="actions">
         <%= f.submit "Update", class: 'btn btn-primary' %>
       </div>

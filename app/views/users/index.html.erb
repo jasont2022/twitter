@@ -1,24 +1,28 @@
-<h1>Users</h1>
+<div class="section">
+  <div class="container">
+    <h2 class="title is-2 text-center">Users</h2>
+    <table class="table" style ="margin-top: 10px;">
+      <tbody>
+        <% @users.each do |user| %>
+          <tr>
+            <td>
+              <% if user.avatar.attached? %>
+                <%= link_to user_path(user) do %>
+                  <img src="<%= url_for(user.avatar) %>%"/>
+                <% end %>
+              <% else %>
+                <%= link_to user_path(user) do %>
+                  <%= image_tag("avatar.jpg") %>
+                <% end %>
+              <% end %>
+            </td>
+            <td><%= user.name %></td>
+            <td><%= user.username %></td>
+            <td><%= link_to 'Show', user %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
 
-<table class="table" style ="margin-top: 10px;">
-  <thead>
-    <tr>
-      <th>Avatar</th>
-      <th>Name</th>
-      <th>Username</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.name %></td>
-        <td><%= user.username %></td>
-        <td><%= link_to 'Show', user %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
