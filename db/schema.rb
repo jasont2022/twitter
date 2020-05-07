@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_06_122922) do
+ActiveRecord::Schema.define(version: 2020_05_07_125457) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -31,6 +31,15 @@ ActiveRecord::Schema.define(version: 2020_05_06_122922) do
     t.string "checksum", null: false
     t.datetime "created_at", null: false
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
+  end
+
+  create_table "followships", force: :cascade do |t|
+    t.integer "follower_id", null: false
+    t.integer "following_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["follower_id"], name: "index_followships_on_follower_id"
+    t.index ["following_id"], name: "index_followships_on_following_id"
   end
 
   create_table "tweets", force: :cascade do |t|
@@ -56,5 +65,7 @@ ActiveRecord::Schema.define(version: 2020_05_06_122922) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "followships", "users", column: "follower_id"
+  add_foreign_key "followships", "users", column: "following_id"
   add_foreign_key "tweets", "users"
 end

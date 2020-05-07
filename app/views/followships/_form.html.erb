@@ -1,0 +1,27 @@
+<%= form_with(model: followship, local: true) do |form| %>
+  <% if followship.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(followship.errors.count, "error") %> prohibited this followship from being saved:</h2>
+
+      <ul>
+        <% followship.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :follower_id %>
+    <%= form.text_field :follower_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :following_id %>
+    <%= form.text_field :following_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
