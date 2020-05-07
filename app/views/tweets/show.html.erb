@@ -12,7 +12,7 @@
             <%= image_tag("avatar.jpg") %>
           <% end %>
         <% end %>
-        <p><strong><%= @user.name%></strong></p>
+        <p style="margin-bottom: 0px;"> <strong><%= @user.name%></strong></p>
         <p> <%= @user.username %> </p>
         <p class="card-text"> <%= @tweet.tweet %></p>
         <% if @user == current_user %>
@@ -20,6 +20,6 @@
         <% end %>
       </div>
     </div>
-    <%= link_to 'Back', user_tweets_path(@tweet.user), class: "nav-link" %>
+    <%= link_to 'Back', url_for(:back), class: "nav-link" %>
   </div>
 </div>

@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    @tweets = @user.tweets
+    @tweets = @user.tweets.order("created_at DESC")
   end
   
   private

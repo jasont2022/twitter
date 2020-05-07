@@ -14,7 +14,8 @@
         <% end %>
         <p style="margin-bottom: 0px;"><strong><%= @user.name%></strong></p>
         <p style="margin-bottom: 0px;"><%= @user.username %></p>
-        <p><%= @user.email %></p>
+        <p style="margin-bottom: 0px;"><%= @user.email %></p>
+        <p>Joined <%= @user.created_at %></p>
         <% if @user == current_user %>
           <%= button_to 'Edit Profile', '/accounts/edit', method: :get, class: "btn btn-outline-primary"%>
         <% end %>
