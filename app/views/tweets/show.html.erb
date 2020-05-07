@@ -1,21 +1,22 @@
 <div class="section">
   <div class="container">
-    <h2 class="title is-2 text-center">Tweet</h2>
-    <div class="card border-primary mb-3" style="max-width: 18rem;">
+    <h2 class="title is-2 text-center" style="color:#0088be;">Tweet</h2>
+    <div class="card border-primary mb-3">
       <div class="card-body text-primary">
-        <% if @user.avatar.attached? %>
-          <%= link_to user_path(@user) do %>
-            <img src="<%= url_for(@user.avatar) %>%"/>
+        <% if @tweet.user.avatar.attached? %>
+          <%= link_to user_path(@tweet.user) do %>
+            <img src="<%= url_for(@tweet.user.avatar) %>%"/>
           <% end %>
         <% else %>
-          <%= link_to user_path(@user) do %>
+          <%= link_to user_path(@tweet.user) do %>
             <%= image_tag("avatar.jpg") %>
           <% end %>
         <% end %>
-        <p style="margin-bottom: 0px;"> <strong><%= @user.name%></strong></p>
-        <p> <%= @user.username %> </p>
+        <p style="margin-bottom: 0px;"> <strong><%= @tweet.user.name%></strong></p>
+        <p><%= @tweet.user.username %></p>
         <p class="card-text"> <%= @tweet.tweet %></p>
-        <% if @user == current_user %>
+        <p><%= @tweet.created_at %></p>
+        <% if @tweet.user == current_user %>
             <td><%= link_to 'Destroy', user_tweet_path(@tweet.user, @tweet), method: :delete, data: { confirm: 'Are you sure?' }, class: "card-link" %></td>
         <% end %>
       </div>

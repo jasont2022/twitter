@@ -1,24 +1,32 @@
 <div class="section">
   <div class="container">
-    <h2 class="title is-2 text-center">Users</h2>
+    <h2 class="title is-2 text-center" style="color:#0088be;">People</h2>
     <table class="table" style ="margin-top: 10px;">
       <tbody>
         <% @users.each do |user| %>
           <tr>
             <td>
-              <% if user.avatar.attached? %>
-                <%= link_to user_path(user) do %>
-                  <img src="<%= url_for(user.avatar) %>%"/>
+              <%= link_to user_path(user) do %>
+                <% if user.avatar.attached? %>
+                    <img src="<%= url_for(user.avatar) %>%"/>
+                <% else %>
+                    <%= image_tag("avatar.jpg") %>
                 <% end %>
-              <% else %>
-                <%= link_to user_path(user) do %>
-                  <%= image_tag("avatar.jpg") %>
+              <% end %>
+              <%= link_to user_path(user) do %>
+                <p style="margin-bottom: 0px;"><b><%= user.name %></b></p>
+              <% end %>
+              <p><%= user.username %></p>
+            </td>
+            <td>
+              <% if user != current_user %>
+                <% if current_user.followings.include?(user)%>
+                  <%= button_to 'Following', user_path(user), method: :get, class: "btn btn-primary" %>
+                <% else %>
+                  <%= button_to 'Follow', user_path(user), method: :get, class: "btn btn-outline-primary" %>
                 <% end %>
               <% end %>
             </td>
-            <td><%= user.name %></td>
-            <td><%= user.username %></td>
-            <td><%= link_to 'Show', user %></td>
           </tr>
         <% end %>
       </tbody>

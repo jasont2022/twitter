@@ -1,4 +1,5 @@
 class FollowshipsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_followship, only: [:show, :edit, :update, :destroy]
 
   # GET /followships

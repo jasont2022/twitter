@@ -1,4 +1,4 @@
-<div class="card border-primary mb-3" style="max-width: 18rem;">
+<div class="card border-primary mb-3">
   <div class="card-body text-primary">
     <%= form_with(model: [tweet.user, tweet], local: true) do |form| %>
       <% if tweet.errors.any? %>
@@ -11,15 +11,12 @@
           </ul>
         </div>
       <% end %>
-
-      <% if tweet.user.avatar.attached? %>
-        <%= link_to user_path(tweet.user) do %>
-          <img src="<%= url_for(tweet.user.avatar) %>%"/>
+      <%= link_to user_path(tweet.user) do %>
+        <% if tweet.user.avatar.attached? %>
+            <img src="<%= url_for(tweet.user.avatar) %>%"/>
+        <% else %>
+            <%= image_tag("avatar.jpg") %>
         <% end %>
-      <% else %>
-        <%= link_to user_path(tweet.user) do %>
-          <%= image_tag("avatar.jpg") %>
-         <% end %>
       <% end %>
 
       <div class="field form-group">
