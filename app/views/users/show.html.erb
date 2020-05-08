@@ -12,12 +12,8 @@
         <p style="margin-bottom: 0px;"><%= @user.username %></p>
         <p style="margin-bottom: 5px;"><%= @user.email %></p>
         <p>Joined <%= @user.created_at %></p>
-        <%= link_to user_path(@user) do %>
-          <p><strong><%= @user.followings.count %></strong> Following</p>
-        <% end %>
-        <%= link_to user_path(@user) do %>
-          <p><strong><%= @user.followers.count %></strong> Followers</p>
-         <% end %>
+        <p><strong><%= @user.followings.count %></strong> Following</p>
+        <p><strong><%= @user.followers.count %></strong> Followers</p>
         <% if @user == current_user %>
           <%= button_to 'Edit Profile', '/accounts/edit', method: :get, class: "btn btn-outline-primary"%>
         <% else %>
