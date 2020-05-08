@@ -4,12 +4,8 @@ Rails.application.routes.draw do
   
   devise_for :users, :path => 'accounts'
 
-  post 'createfollowship/:from_user/:to_user', to: 'followships#create', as: 
-  delete 'deletefollowship/:from_user/:to_user', to: 'followships#destroy', as: 
-
-   # add/drop courses routes (see /controllers/registrations_controller.rb)
-  post '/add_course/:user_id/:course_id', to: 'registrations#add_course', as: "add_course"
-  delete '/drop_course/:user_id/:course_id', to: 'registrations#drop_course', as: "drop_course"
+  post 'createfollowship/:from_user/:to_user', to: 'followships#create_followship', as: "create_followship"
+  delete 'deletefollowship/:from_user/:to_user', to: 'followships#destroy_followship', as: "destroy_followship"
 
   resources :users, :only => [:index, :show] do
     resources :tweets, :only => [:show, :create, :destroy]

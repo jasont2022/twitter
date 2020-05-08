@@ -1,19 +1,19 @@
 <div class="section">
   <div class="container">
-    <h2 class="title is-2 text-center" style="color:#0088be;">Tweet</h2>
+    <h2 class="page-title">Tweet</h2>
     <div class="card border-primary mb-3">
-      <div class="card-body text-primary">
+      <div class="card-body">
         <% if @tweet.user.avatar.attached? %>
           <%= link_to user_path(@tweet.user) do %>
-            <img src="<%= url_for(@tweet.user.avatar) %>%"/>
+            <img class="non-profile-pic" src="<%= url_for(@tweet.user.avatar) %>%"/>
           <% end %>
         <% else %>
           <%= link_to user_path(@tweet.user) do %>
-            <%= image_tag("avatar.jpg") %>
+            <%= image_tag("avatar.jpg", class:"non-profile-pic" )%>
           <% end %>
         <% end %>
         <p style="margin-bottom: 0px;"> <strong><%= @tweet.user.name%></strong></p>
-        <p><%= @tweet.user.username %></p>
+        <p>@<%= @tweet.user.username %></p>
         <p class="card-text"> <%= @tweet.tweet %></p>
         <p><%= @tweet.created_at %></p>
         <% if @tweet.user == current_user %>

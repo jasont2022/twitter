@@ -1,15 +1,15 @@
 <div class="section">
   <div class="container">
-    <h2 class="title is-2 text-center" style="color:#0088be;"><%= @user.name %></h2>
+    <h2 class="page-title"><%= @user.name %></h2>
     <div class="card border-primary mb-3">
-      <div class="card-body text-primary">
+      <div class="card-body">
         <% if @user.avatar.attached? %>
-            <img src="<%= url_for(@user.avatar) %>%"/>
+            <img class="profile-pic" src="<%= url_for(@user.avatar) %>%"/>
         <% else %>
-            <%= image_tag("avatar.jpg") %>
+            <%= image_tag("avatar.jpg", class:"profile-pic") %>
         <% end %>
         <p style="margin-bottom: 0px;"><strong><%= @user.name%></strong></p>
-        <p style="margin-bottom: 0px;"><%= @user.username %></p>
+        <p style="margin-bottom: 0px;">@<%= @user.username %></p>
         <p style="margin-bottom: 5px;"><%= @user.email %></p>
         <p>Joined <%= @user.created_at %></p>
         <p><strong><%= @user.followings.count %></strong> Following</p>
@@ -18,9 +18,9 @@
           <%= button_to 'Edit Profile', '/accounts/edit', method: :get, class: "btn btn-outline-primary"%>
         <% else %>
           <% if current_user.followings.include?(@user)%>
-              <%= button_to 'Following', user_path(@user), method: :get, class: "btn btn-primary" %>
+              <%= button_to 'Unfollow', "/deletefollowship/#{current_user.id}/#{@user.id}", method: :delete, class: 'btn btn-outline-danger' %>
           <% else %>
-              <%= button_to 'Follow', user_path(@user), method: :get, class: "btn btn-outline-primary" %>
+              <%= button_to 'Follow', "/createfollowship/#{current_user.id}/#{@user.id}", method: :post, class: "btn btn-outline-primary"%>
           <% end %>
         <% end %>
           </div>
@@ -38,12 +38,12 @@
               <td>
                 <%= link_to user_tweet_path(@user, tweet) do %>
                 <% if @user.avatar.attached? %>
-                  <img src="<%= url_for(@user.avatar) %>%"/>
+                  <img class="non-profile-pic" src="<%= url_for(@user.avatar) %>%"/>
                 <% else %>
-                  <%= image_tag("avatar.jpg") %>
+                  <%= image_tag("avatar.jpg", class:"non-profile-pic") %>
                 <% end %>
                 <p style="margin-bottom: 0px;"><strong><%= @user.name%></strong></p>
-                <p style="margin-bottom: 0px;"><%= @user.username %></p>
+                <p style="margin-bottom: 0px;">@<%= @user.username %></p>
                 <p><%= tweet.tweet %></p>
                 <% end %>
               </td>

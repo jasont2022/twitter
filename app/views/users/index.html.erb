@@ -1,6 +1,6 @@
 <div class="section">
   <div class="container">
-    <h2 class="title is-2 text-center" style="color:#0088be;">People</h2>
+    <h2 class="page-title">People</h2>
     <table class="table" style ="margin-top: 10px;">
       <tbody>
         <% @users.each do |user| %>
@@ -8,15 +8,15 @@
             <td>
               <%= link_to user_path(user) do %>
                 <% if user.avatar.attached? %>
-                    <img src="<%= url_for(user.avatar) %>%"/>
+                    <img class= "non-profile-pic" src="<%= url_for(user.avatar) %>%"/>
                 <% else %>
-                    <%= image_tag("avatar.jpg") %>
+                    <%= image_tag("avatar.jpg", class:"non-profile-pic") %>
                 <% end %>
               <% end %>
               <%= link_to user_path(user) do %>
                 <p style="margin-bottom: 0px;"><b><%= user.name %></b></p>
               <% end %>
-              <p><%= user.username %></p>
+              <p>@<%= user.username %></p>
             </td>
             <td>
               <% if user != current_user %>

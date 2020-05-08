@@ -1,5 +1,5 @@
 <div class="card border-primary mb-3">
-  <div class="card-body text-primary">
+  <div class="card-body">
     <%= form_with(model: [tweet.user, tweet], local: true) do |form| %>
       <% if tweet.errors.any? %>
         <div id="error_explanation">
@@ -13,9 +13,9 @@
       <% end %>
       <%= link_to user_path(tweet.user) do %>
         <% if tweet.user.avatar.attached? %>
-            <img src="<%= url_for(tweet.user.avatar) %>%"/>
+            <img class="non-profile-pic" src="<%= url_for(tweet.user.avatar) %>%"/>
         <% else %>
-            <%= image_tag("avatar.jpg") %>
+            <%= image_tag("avatar.jpg", class:"non-profile-pic") %>
         <% end %>
       <% end %>
 
