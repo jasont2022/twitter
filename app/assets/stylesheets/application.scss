@@ -24,8 +24,9 @@
 }
 
 .page-title {
-    color: #00acee;
+    color: rgba(29,161,242,1.00);;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .non-profile-pic {
@@ -35,9 +36,23 @@
 }
 
 .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
+    margin-bottom: 0px;
+}
+
+.tweet-display-user-info {
+
+}
+
+.tweet-display-name-same-row {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.tweet-display-username-same-row {
+    color:#808080;
     margin-bottom: 0px;
 }
     

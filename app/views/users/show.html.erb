@@ -18,7 +18,7 @@
           <%= button_to 'Edit Profile', '/accounts/edit', method: :get, class: "btn btn-outline-primary"%>
         <% else %>
           <% if current_user.followings.include?(@user)%>
-              <%= button_to 'Unfollow', "/deletefollowship/#{current_user.id}/#{@user.id}", method: :delete, class: 'btn btn-outline-danger' %>
+              <%= button_to 'Unfollow', "/deletefollowship/#{current_user.id}/#{@user.id}", method: :delete, class: 'btn btn-danger' %>
           <% else %>
               <%= button_to 'Follow', "/createfollowship/#{current_user.id}/#{@user.id}", method: :post, class: "btn btn-outline-primary"%>
           <% end %>
@@ -42,9 +42,11 @@
                 <% else %>
                   <%= image_tag("avatar.jpg", class:"non-profile-pic") %>
                 <% end %>
-                <p style="margin-bottom: 0px;"><strong><%= @user.name%></strong></p>
-                <p style="margin-bottom: 0px;">@<%= @user.username %></p>
-                <p><%= tweet.tweet %></p>
+                <div class="tweet-display-user-info">
+                  <p class="tweet-display-name-same-row"><%= @user.name%></p>
+                  <p class="tweet-display-username-same-row">@<%= @user.username %></p>
+                  <p><%= tweet.tweet %></p>
+                </div>
                 <% end %>
               </td>
             </tr>

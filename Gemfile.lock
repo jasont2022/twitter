@@ -280,6 +280,7 @@ DEPENDENCIES
   guard-livereload (~> 2.5, >= 2.5.2)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
+  pry
   puma (~> 4.1)
   rails (~> 6.0.2, >= 6.0.2.2)
   sass-rails (>= 6)

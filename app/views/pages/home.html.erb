@@ -9,14 +9,18 @@
           <% @feed.each do |tweet| %>
             <tr>
               <td>
+                <%= link_to user_tweet_path(tweet.user, tweet) do %>
                 <% if tweet.user.avatar.attached? %>
                   <img class="non-profile-pic" src="<%= url_for(tweet.user.avatar) %>%"/>
                 <% else %>
                   <%= image_tag("avatar.jpg", class:"non-profile-pic") %>
                 <% end %>
-                <p style="margin-bottom: 0px;"><strong><%= tweet.user.name%></strong></p>
-                <p style="margin-bottom: 0px;">@<%= tweet.user.username %></p>
-                <p><%= tweet.tweet %></p>
+                <div class="tweet-display-user-info">
+                  <p class="tweet-display-name-same-row"><%= tweet.user.name%></p>
+                  <p class="tweet-display-username-same-row">@<%= tweet.user.username %></p>
+                  <p><%= tweet.tweet %></p>
+                </div>
+                <% end %>
               </td>
             </tr>
           <% end %>
