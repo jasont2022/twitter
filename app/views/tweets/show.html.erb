@@ -12,9 +12,9 @@
             <%= image_tag("avatar.jpg", class:"non-profile-pic" )%>
           <% end %>
         <% end %>
-        <p style="margin-bottom: 0px;"> <strong><%= @tweet.user.name%></strong></p>
-        <p>@<%= @tweet.user.username %></p>
-        <p class="card-text"> <%= @tweet.tweet %></p>
+        <p class="tweet-display-name-same-row"><%= tweet.user.name%></p>
+        <p class="tweet-display-username-same-row">@<%= tweet.user.username %></p>
+        <p><%= tweet.tweet %></p>
         <p><%= @tweet.created_at %></p>
         <% if @tweet.user == current_user %>
             <td><%= link_to 'Destroy', user_tweet_path(@tweet.user, @tweet), method: :delete, data: { confirm: 'Are you sure?' }, class: "card-link" %></td>

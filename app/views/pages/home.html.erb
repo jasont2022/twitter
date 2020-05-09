@@ -15,11 +15,9 @@
                 <% else %>
                   <%= image_tag("avatar.jpg", class:"non-profile-pic") %>
                 <% end %>
-                <div class="tweet-display-user-info">
-                  <p class="tweet-display-name-same-row"><%= tweet.user.name%></p>
-                  <p class="tweet-display-username-same-row">@<%= tweet.user.username %></p>
-                  <p><%= tweet.tweet %></p>
-                </div>
+                <p class="tweet-display-name-same-row"><%= tweet.user.name%></p>
+                <p class="tweet-display-username-same-row">@<%= tweet.user.username %></p>
+                <p><%= tweet.tweet %></p>
                 <% end %>
               </td>
             </tr>
