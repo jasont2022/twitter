@@ -6,10 +6,8 @@ This project is a simple mini-mock up version of Twitter! The project is impleme
 * [Technologies](#technologies)
 * [Features](#features)
 * [Getting Started](#getting-started)
-* [Developing](#developing)
 * [Contribute](#contribute)
 * [Links](#links)
-* [License](#license)
 
 ## Motivation
 
@@ -32,21 +30,15 @@ This project has the following features:
 * Create / Edit / Delete Profile
 
 ## Getting Started
+### Website
 
-## Developing
-Here's a brief intro about what a developer must do in order to start developing the project further:
-```bash
-$ git clone https://github.com/jasont2022/twitter
-$ git cd twitter
-```
+### Code
 
 ## Contribute
 
 ## Links
-* Project website: http://cis196-jason-twitter.herokuapp.com/
+Here is a list of useful links related to the project:
+* Project website: http://cis196-jason-twitter.herokuapp.com
 * Repository: https://github.com/jasont2022/twitter
 * Issue tracker: https://github.com/jasont2022/twitter/issues
   * In case of sensitive bugs like security vulnerabilities, please contact jasontran2022@gmail.com directly instead of using issue tracker. We value your effort to improve the security and privacy of this project!
-
-## License
-
