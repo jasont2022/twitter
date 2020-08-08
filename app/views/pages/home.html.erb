@@ -3,7 +3,7 @@
     <h2 class="page-title">Home</h2>
       <%= render 'form', tweet: @tweet %>
 
-       <table class="table table-hover">
+      <table class="table table-hover">
         <tbody>
         <% if !@feed.empty? %>
           <% @feed.each do |tweet| %>
