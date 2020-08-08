@@ -19,7 +19,9 @@ This project is created with the following:
 * Rails 6.0.2
 * [Bootstrap 4](https://getbootstrap.com/)
 * [Devise Gem](https://github.com/heartcombo/devise)
-* [Gaurd](https://rubygems.org/gems/guard) & [Guard LiveReload](https://rubygems.org/gems/guard-livereload)
+* [Gaurd](https://rubygems.org/gems/guard) 
+* [Guard LiveReload](https://rubygems.org/gems/guard-livereload)
+* Amazon Web Services
 
 ## Features
 This project has the following features:
@@ -42,7 +44,7 @@ $ git clone
 ## Links
 * Project website: (http://cis196-jason-twitter.herokuapp.com/)
 * Repository: (https://github.com/jasont2022/twitter)
-* Issue tracker:
+* Issue tracker: (https://github.com/jasont2022/twitter/issues)
 
 ## License
 
