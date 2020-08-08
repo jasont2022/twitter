@@ -36,15 +36,17 @@ This project has the following features:
 ## Developing
 Here's a brief intro about what a developer must do in order to start developing the project further:
 ```bash
-$ git clone
+$ git clone https://github.com/jasont2022/twitter
+$ git cd twitter
 ```
 
 ## Contribute
 
 ## Links
-* Project website: (http://cis196-jason-twitter.herokuapp.com/)
-* Repository: (https://github.com/jasont2022/twitter)
-* Issue tracker: (https://github.com/jasont2022/twitter/issues)
+* Project website: http://cis196-jason-twitter.herokuapp.com/
+* Repository: https://github.com/jasont2022/twitter
+* Issue tracker: https://github.com/jasont2022/twitter/issues
+  * In case of sensitive bugs like security vulnerabilities, please contact jasontran2022@gmail.com directly instead of using issue tracker. We value your effort to improve the security and privacy of this project!
 
 ## License
 
