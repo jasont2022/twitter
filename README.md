@@ -39,6 +39,6 @@ This project has the following features:
 ## Links
 Here is a list of useful links related to the project:
 * Project website: http://cis196-jason-twitter.herokuapp.com
-* Repository: https://github.com/jasont2022/twitter
-* Issue tracker: https://github.com/jasont2022/twitter/issues
+* Repository: http://github.com/jasont2022/twitter
+* Issue tracker: http://github.com/jasont2022/twitter/issues
   * In case of sensitive bugs like security vulnerabilities, please contact jasontran2022@gmail.com directly instead of using issue tracker. We value your effort to improve the security and privacy of this project!
