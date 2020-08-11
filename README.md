@@ -3,7 +3,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 ![README Checker](https://github.com/jasont2022/twitter/workflows/README%20URL%20Checker/badge.svg)
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -63,7 +62,5 @@ Here is a list of useful links related to the project:
 [stars-url]: https://github.com/jasont2022/twitter/stargazers
 [issues-shield]: https://img.shields.io/github/issues/jasont2022/twitter?color=success&style=flat-square
 [issues-url]: https://github.com/jasont2022/twitter/issues
-[license-shield]: https://img.shields.io/github/license/jasont2022/twitter.svg?style=flat-square
-[license-url]: https://github.com/jasont2022/twitter/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jasontran2022
