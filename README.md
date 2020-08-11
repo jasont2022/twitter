@@ -21,6 +21,7 @@ This project is a simple mini-mock up version of Twitter! The project is impleme
 
 ## Technologies
 This project is created with the following:
+* HTML
 * Ruby
 * Rails 6.0.2
 * [Bootstrap 4](https://getbootstrap.com/)
@@ -38,6 +39,7 @@ This project has the following features:
 * Create / Edit / Delete Profile
 
 ## Getting Started
+Here are the following steps below to get started with the website and code:
 ### Website
 
 ### Code
