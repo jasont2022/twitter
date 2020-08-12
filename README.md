@@ -63,7 +63,7 @@ Here is a list of useful links related to the project:
   * In case of sensitive bugs like security vulnerabilities, please contact jasontran2022@gmail.com directly instead of using issue tracker. We value your effort to improve the security and privacy of this project!
   
 ## License
-This repository is released under the [MIT license](https://github.com/jasont2022/evil-hangman/blob/master/LICENSE.md). In short, this means you are free to use this software in any personal, open-source or commercial projects. Attribution is optional but appreciated.
+This repository is released under the [MIT license](https://github.com/jasont2022/twitter/blob/master/LICENSE.md). In short, this means you are free to use this software in any personal, open-source or commercial projects. Attribution is optional but appreciated.
   
 <!-- Links -->
 [contributors-shield]: https://img.shields.io/github/contributors/jasont2022/twitter.svg?color=brightgreen&style=flat-square
@@ -76,7 +76,7 @@ This repository is released under the [MIT license](https://github.com/jasont202
 [stars-url]: https://github.com/jasont2022/twitter/stargazers
 [issues-shield]: https://img.shields.io/github/issues/jasont2022/twitter?color=success&style=flat-square
 [issues-url]: https://github.com/jasont2022/twitter/issues
-[license-shield]: https://img.shields.io/github/license/jasont2022/evil-hangman.svg?style=flat-square
-[license-url]: https://github.com/jasont2022/evil-hangman/blob/master/LICENSE.md
+[license-shield]: https://img.shields.io/github/license/jasont2022/twitter.svg?style=flat-square
+[license-url]: https://github.com/jasont2022/twitter/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jasontran2022
