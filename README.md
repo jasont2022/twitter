@@ -13,6 +13,9 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+# Project Status
+**Currently working on README, Wiki, Contributing, almost finished**
+
 # MiniTwitter
 This project is a simple mini-mock up version of Twitter! The project is implemented in the Ruby programming language and Rails framework. Below has the following technologies and features for this project.
 
