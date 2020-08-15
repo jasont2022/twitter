@@ -17,22 +17,22 @@
 **Currently working on README, Wiki, Contributing, almost finished**
 
 # MiniTwitter
-This project is a simple mini-mock up version of Twitter! The project is implemented in the Ruby programming language and Rails framework. Below has the following technologies and features for this project.
+This project is a simple mini-mock up version of Twitter! The project is implemented in the Ruby programming language and Rails framework. Below has the following technologies and core features for this project.
 
 ## Table of Contents
-* [Motivation](#motivation)
 * [Technologies](#technologies)
 * [Features](#features)
 * [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Website](#website)
+  * [Code](#code)
 * [Contribute](#contribute)
 * [Links](#links)
 * [License](#license)
 
-## Motivation
-
 ## Technologies
 This project is created with the following:
-* HTML
+* HTML5
 * Ruby
 * Rails 6.0.2
 * [Bootstrap 4](https://getbootstrap.com/)
@@ -47,11 +47,13 @@ This project has the following features:
 * Account Session Management
 * Profile Pictures
 * Create / Read / Delete Tweets
-* Follow / Unfolow Users
-* Create / Edit / Delete Profile
+* Search / Follow / Unfollow Users
+* Create / Read/ Update / Delete Profile
 
 ## Getting Started
 Here are the following steps below to get started with the website and code:
+### Prerequisites
+
 ### Website
 
 ### Code
@@ -66,7 +68,7 @@ Here is a list of useful links related to the project:
   * In case of sensitive bugs like security vulnerabilities, please contact jasontran2022@gmail.com directly instead of using issue tracker. We value your effort to improve the security and privacy of this project!
   
 ## License
-This repository is released under the [MIT license](https://github.com/jasont2022/twitter/blob/master/LICENSE.md). In short, this means you are free to use this software in any personal, open-source or commercial projects. Attribution is optional but appreciated.
+This repository is released under the [MIT license][license-url]. In short, you are free to use this software in any personal, open-source or commercial projects. See `LICENSE.md` or the [opensource MIT license](https://opensource.org/licenses/MIT) for more information.
   
 <!-- Links -->
 [contributors-shield]: https://img.shields.io/github/contributors/jasont2022/twitter.svg?color=brightgreen&style=flat-square
