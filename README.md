@@ -16,13 +16,34 @@
 # Project Status
 **Currently working on README, Wiki, Contributing, almost finished**
 
-# MiniTwitter
-This project is a simple mini-mock up version of Twitter! The project is implemented in the Ruby programming language and Rails framework. Below has the following technologies and core features for this project.
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/github_username/repo">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">MiniTwitter</h3>
+
+  <p align="center">
+    A mini version of Twitter implemented in Ruby & Rails
+    <br />
+    <a href="https://github.com/jasont2022/twitter"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://cis196-jason-twitter.herokuapp.com/">View Web App</a>
+    ·
+    <a href="https://github.com/jasont2022/twitter/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/jasont2022/twitter/issues">Request Feature</a>
+  </p>
+</p>
 
 ## Table of Contents
+* [About](#about)
 * [Technologies](#technologies)
 * [Features](#features)
-* [Schema](#Schema)
+* [Schema](#schema)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Website](#website)
@@ -30,6 +51,9 @@ This project is a simple mini-mock up version of Twitter! The project is impleme
 * [Contribute](#contribute)
 * [Links](#links)
 * [License](#license)
+
+## About
+**MiniTwitter** is a simple mini-mock up version of Twitter! The web application is implemented in the Ruby programming language and Rails framework. Below has the following technologies and core features for this project.
 
 ## Technologies
 This project is created with the following:
@@ -87,6 +111,8 @@ For the code, must have the lastest Ruby and Rails version installed
 ### Code
 
 ## Contribute
+If there is a bug, Any contributions you make are greatly appreciated. 
+This repository aims to be contribution friendly and any contributions you make are greatly appreciated. Please be sure to check out the wiki on guidelines and instructions before contributing to this repository.
 
 ## Links
 Here is a list of useful links related to the project:
@@ -94,6 +120,7 @@ Here is a list of useful links related to the project:
 * Repository: http://github.com/jasont2022/twitter
 * Issue tracker: http://github.com/jasont2022/twitter/issues
   * In case of sensitive bugs like security vulnerabilities, please contact jasontran2022@gmail.com directly instead of using issue tracker. We value your effort to improve the security and privacy of this project!
+* Check out [technologies](#technologies) section for a list of amazing gems & technologies used in this project
   
 ## License
 This repository is released under the [MIT license][license-url]. In short, you are free to use this software in any personal, open-source or commercial projects. See `LICENSE.md` or the [opensource MIT license](https://opensource.org/licenses/MIT) for more information.
