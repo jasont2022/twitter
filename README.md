@@ -52,7 +52,7 @@ This project has the following features:
 * User Profile Pictures via Active Storage
 * Search / Follow / Unfollow Users
 * Create / Read / Update / Delete Profile
-* Create ? Update / Reset Password
+* Create / Update / Reset Password
 
 ## Schema
 Below is a basic schema table for this project, check out `schema.rb` for a detailed schema
@@ -81,7 +81,7 @@ Below is a basic schema table for this project, check out `schema.rb` for a deta
 ## Getting Started
 Here are the following steps below to get started with the website and code:
 ### Prerequisites
-
+For the code, must have the lastest Ruby and Rails version installed
 ### Website
 
 ### Code
