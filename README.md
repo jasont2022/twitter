@@ -20,7 +20,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/jasont2022/twitter">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="app/assets/images/icons8-twitter-96.png" alt="Logo">
   </a>
 
   <h3 align="center">MiniTwitter</h3>
@@ -121,10 +121,11 @@ Here is a list of useful links related to the project:
   * Please be sure to read the wiki on guidelines and instructions before contributing to this repository.
   * In case of sensitive bugs like security vulnerabilities, please contact jasontran2022@gmail.com directly instead of using issue tracker. We value your effort to improve the security and privacy of this project!
 * Check out [technologies](#technologies) section for a list of amazing gems & technologies used in this project
+* This repository logo image is created by [icons8](https://icons8.com)
 
 ## License
 This repository is released under the [MIT license][license-url]. In short, you are free to use this software in any personal, open-source or commercial projects. See `LICENSE.md` or the [opensource website](https://opensource.org/licenses/MIT) for more information.
-  
+
 <!-- Links -->
 [contributors-shield]: https://img.shields.io/github/contributors/jasont2022/twitter.svg?color=brightgreen&style=flat-square
 [contributors-url]: https://github.com/jasont2022/twitter/graphs/contributors
