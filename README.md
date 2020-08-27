@@ -22,6 +22,7 @@ This project is a simple mini-mock up version of Twitter! The project is impleme
 ## Table of Contents
 * [Technologies](#technologies)
 * [Features](#features)
+* [Schema](#Schema)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Website](#website)
@@ -34,21 +35,48 @@ This project is a simple mini-mock up version of Twitter! The project is impleme
 This project is created with the following:
 * HTML5
 * Ruby
-* Rails 6.0.2
+* Rails 6.0.3
 * [Bootstrap 4](https://getbootstrap.com/)
 * [Devise Gem](https://github.com/heartcombo/devise)
+* [Active Storage](https://github.com/rails/rails/tree/master/activestorage)
 * [Gaurd](https://rubygems.org/gems/guard) 
 * [Guard LiveReload](https://rubygems.org/gems/guard-livereload)
-* Amazon Web Services
+* Amazon S3
 * [Heroku](https://www.heroku.com)
 
 ## Features
 This project has the following features:
 * Account Session Management
-* Profile Pictures
+* Home Feed Page
 * Create / Read / Delete Tweets
+* User Profile Pictures via Active Storage
 * Search / Follow / Unfollow Users
-* Create / Read/ Update / Delete Profile
+* Create / Read / Update / Delete Profile
+* Create ? Update / Reset Password
+
+## Schema
+Below is a basic schema table for this project, check out `schema.rb` for a detailed schema
+#### User
+| Property      | Type     | Description |
+| ------------- | -------- | ------------|
+| email         | String   | Required for user sign in |
+| password      | String   | Hidden - Required for sign in |
+| username      | String   | A unique user name |
+| name          | String   | the name of the user |
+| profileImage  | File     | User can upload a profile picture |
+#### Tweets
+| Property      | Type     | Description |
+| ------------- | -------- | ------------|
+| tweet         | Text     | The text body of the tweet |
+| created_at    | Datetime | The time at which the tweet was created |
+#### Followships
+| Property      | Type     | Description |
+| ------------- | -------- | ------------|
+| follower_id   | Bigint   | The unqiue of the follower |
+| following_id  | Bigint   | The unqiue of the following |
+
+* Users have many Tweets (one-to-many association)
+* Followship (self-referring many-to-many association)
 
 ## Getting Started
 Here are the following steps below to get started with the website and code:
