@@ -19,7 +19,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo">
+  <a href="https://github.com/jasont2022/twitter">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -61,12 +61,12 @@ This project is created with the following:
 * Ruby
 * Rails 6.0.3
 * [Bootstrap 4](https://getbootstrap.com/)
-* [Devise Gem](https://github.com/heartcombo/devise)
+* [Devise](https://github.com/heartcombo/devise)
 * [Active Storage](https://github.com/rails/rails/tree/master/activestorage)
 * [Gaurd](https://rubygems.org/gems/guard) 
 * [Guard LiveReload](https://rubygems.org/gems/guard-livereload)
 * Amazon S3
-* [Heroku](https://www.heroku.com)
+* [Heroku](https://www.heroku.com/home)
 
 ## Features
 This project has the following features:
