@@ -10,7 +10,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 ![README Checker](https://github.com/jasont2022/twitter/workflows/README%20URL%20Checker/badge.svg)
-[![MIT License][license-shield]][license-url]
+[![Apache License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 # Project Status
@@ -124,7 +124,7 @@ Here is a list of useful links related to the project:
 * This repository logo image is created by [icons8](https://icons8.com)
 
 ## License
-This repository is released under the [MIT license][license-url]. In short, you are free to use this software in any personal, open-source or commercial projects. See `LICENSE.md` or the [opensource website](https://opensource.org/licenses/MIT) for more information.
+This repository is released under the [Apache 2.0 License][license-url]. See `LICENSE.md` or the [Apache website](http://www.apache.org/licenses/LICENSE-2.0) for more information.
 
 <!-- Links -->
 [contributors-shield]: https://img.shields.io/github/contributors/jasont2022/twitter.svg?color=brightgreen&style=flat-square
