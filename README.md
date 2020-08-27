@@ -14,7 +14,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 # Project Status
-**Currently working on README, Wiki, Contributing, almost finished**
+**Currently working on README, Contributing, almost finished**
 
 <!-- PROJECT LOGO -->
 <br />
@@ -111,7 +111,7 @@ For the code, must have the lastest Ruby and Rails version installed
 ### Code
 
 ## Contribute
-Any contributions you make are **greatly appreciated**. Contributions range from report bugs, issues, enhancements, new features, request change of this repo guidelines are welcomed. Please be sure to check `CONTRIBUTING.md` on guidelines and instructions before contributing to this repository.
+Any contributions you make are **greatly appreciated**. Contributions range from reporting bugs, issues, enhancements, and requesting. new features. Please be sure to check `CONTRIBUTING.md` on guidelines and instructions before contributing to this repository.
 
 ## Links
 Here is a list of useful links related to the project:
