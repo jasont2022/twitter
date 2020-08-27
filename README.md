@@ -19,7 +19,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/jasont2022/twitter">
+  <a href="https://github.com/jasont2022/twitter" target="_blank">
     <img src="app/assets/images/icons8-twitter-96.png" alt="Logo">
   </a>
 
