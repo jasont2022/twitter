@@ -57,10 +57,10 @@
 
 ## Technologies
 This project is created with the following:
-* HTML5
+* HTML
 * Ruby
 * Rails 6.0.3
-* [Bootstrap 4](https://getbootstrap.com/)
+* [Bootstrap](https://getbootstrap.com/)
 * [Devise](https://github.com/heartcombo/devise)
 * [Active Storage](https://github.com/rails/rails/tree/master/activestorage)
 * [Gaurd](https://rubygems.org/gems/guard) 
@@ -111,19 +111,19 @@ For the code, must have the lastest Ruby and Rails version installed
 ### Code
 
 ## Contribute
-If there is a bug, Any contributions you make are greatly appreciated. 
-This repository aims to be contribution friendly and any contributions you make are greatly appreciated. Please be sure to check out the wiki on guidelines and instructions before contributing to this repository.
+This repository aims to be contribution friendly and any contributions you make are **greatly appreciated**. Please be sure to check out the wiki on guidelines and instructions before contributing to this repository.
 
 ## Links
 Here is a list of useful links related to the project:
 * Project website: http://cis196-jason-twitter.herokuapp.com
 * Repository: http://github.com/jasont2022/twitter
 * Issue tracker: http://github.com/jasont2022/twitter/issues
+  * Please be sure to read the wiki on guidelines and instructions before contributing to this repository.
   * In case of sensitive bugs like security vulnerabilities, please contact jasontran2022@gmail.com directly instead of using issue tracker. We value your effort to improve the security and privacy of this project!
 * Check out [technologies](#technologies) section for a list of amazing gems & technologies used in this project
-  
+
 ## License
-This repository is released under the [MIT license][license-url]. In short, you are free to use this software in any personal, open-source or commercial projects. See `LICENSE.md` or the [opensource MIT license](https://opensource.org/licenses/MIT) for more information.
+This repository is released under the [MIT license][license-url]. In short, you are free to use this software in any personal, open-source or commercial projects. See `LICENSE.md` or the [opensource website](https://opensource.org/licenses/MIT) for more information.
   
 <!-- Links -->
 [contributors-shield]: https://img.shields.io/github/contributors/jasont2022/twitter.svg?color=brightgreen&style=flat-square
