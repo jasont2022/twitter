@@ -7,7 +7,7 @@ gem 'aws-sdk-s3'
 gem 'pry'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
+gem 'rails', '~> 6.0', '>= 6.0.3.2'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
