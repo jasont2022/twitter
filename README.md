@@ -124,7 +124,23 @@ Here is a list of useful links related to the project:
 * This repository logo image is created by [icons8](https://icons8.com)
 
 ## License
-This repository is released under the [Apache 2.0 License][license-url]. See `LICENSE.md` or the [Apache website](http://www.apache.org/licenses/LICENSE-2.0) for more information.
+This repository is released under the [Apache 2.0 License][license-url]. 
+```license
+Copyright 2020 Jason Tran
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+See `LICENSE.md` or the [Apache website](http://www.apache.org/licenses/LICENSE-2.0) for more information.
 
 <!-- Links -->
 [contributors-shield]: https://img.shields.io/github/contributors/jasont2022/twitter.svg?color=brightgreen&style=flat-square
@@ -137,7 +153,7 @@ This repository is released under the [Apache 2.0 License][license-url]. See `LI
 [stars-url]: https://github.com/jasont2022/twitter/stargazers
 [issues-shield]: https://img.shields.io/github/issues/jasont2022/twitter?color=success&style=flat-square
 [issues-url]: https://github.com/jasont2022/twitter/issues
-[license-shield]: https://img.shields.io/github/license/jasont2022/twitter.svg?style=flat-square
+[license-shield]: https://img.shields.io/github/license/jasont2022/twitter?style=flat-square
 [license-url]: https://github.com/jasont2022/twitter/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jasontran2022
