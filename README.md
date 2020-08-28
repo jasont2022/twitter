@@ -106,12 +106,19 @@ Below is a basic schema table for this project, check out `schema.rb` for a deta
 Here are the following steps below to get started with the website and code:
 ### Prerequisites
 For the code, must have the lastest Ruby and Rails version installed
+</br>
+For a text editor, strongly recommend VS Code
 ### Website
-
+1. 
+2. 
+3. 
 ### Code
+1.
+2.
+3.
 
 ## Contribute
-Any contributions you make are **greatly appreciated**. Contributions range from reporting bugs, issues, enhancements, and requesting new features. Please be sure to check `CONTRIBUTING.md` on guidelines and instructions before contributing to this repository.
+Any contributions you make are **greatly appreciated**. Contributions may range from reporting bugs, issues, enhancements, and requesting new features. Please be sure to check `CONTRIBUTING.md` on guidelines and instructions before contributing to this repository.
 
 ## Links
 Here is a list of useful links related to the project:
