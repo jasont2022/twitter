@@ -107,8 +107,9 @@ For the website, have a working email address it will be used to create an accou
 1. Click on the link http://cis196-jason-twitter.herokuapp.com
 2. You should see the following menu once the website is loaded:
   <a href="http://cis196-jason-twitter.herokuapp.com">
-    <img src="" alt="Website Homepage" width="80" height="80">
+    <img src="app/assets/images/HomePage.png" alt="Website Homepage">
   </a>
+
 3. Once the website is loaded please press the link `Sign Up for Twitter`
 
 ### Code
