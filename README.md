@@ -19,10 +19,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/jasont2022/twitter" target="_blank">
-    <img src="app/assets/images/icons8-twitter-96.png" alt="Logo">
-  </a>
-
   <h3 align="center">MiniTwitter</h3>
 
   <p align="center">
@@ -128,7 +124,6 @@ Here is a list of useful links related to the project:
   * Please be sure to read [CONTRIBUTTING.md](https://github.com/jasont2022/twitter/blob/master/CONTRIBUTING.md) on guidelines and instructions before contributing to this repository.
   * In case of sensitive bugs like security vulnerabilities, please contact jasontran2022@gmail.com directly instead of using issue tracker. We value your effort to improve the security and privacy of this project!
 * Check out [technologies](#technologies) section for a list of amazing gems & technologies used in this project
-* This repository logo image is created by [icons8](https://icons8.com)
 
 ## License
 This repository is released under the [Apache 2.0 License][license-url]. 
