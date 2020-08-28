@@ -111,7 +111,7 @@ For the code, must have the lastest Ruby and Rails version installed
 ### Code
 
 ## Contribute
-Any contributions you make are **greatly appreciated**. Contributions range from reporting bugs, issues, enhancements, and requesting. new features. Please be sure to check `CONTRIBUTING.md` on guidelines and instructions before contributing to this repository.
+Any contributions you make are **greatly appreciated**. Contributions range from reporting bugs, issues, enhancements, and requesting new features. Please be sure to check `CONTRIBUTING.md` on guidelines and instructions before contributing to this repository.
 
 ## Links
 Here is a list of useful links related to the project:
@@ -125,6 +125,7 @@ Here is a list of useful links related to the project:
 
 ## License
 This repository is released under the [Apache 2.0 License][license-url]. 
+
 ```license
 Copyright 2020 Jason Tran
 
@@ -140,6 +141,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
 See `LICENSE.md` or the [Apache website](http://www.apache.org/licenses/LICENSE-2.0) for more information.
 
 <!-- Links -->
