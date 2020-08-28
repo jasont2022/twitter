@@ -6,3 +6,5 @@ This repository aims to be contribution friendly. We are open to, and grateful f
 ### Requesting Enhancements and New Features
 
 ### Reporting Security Issues and Responsible Disclosure
+
+Be sure to check out this repository license when contributing
