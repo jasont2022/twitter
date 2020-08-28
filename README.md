@@ -20,7 +20,6 @@
 <br />
 <p align="center">
   <h3 align="center">MiniTwitter</h3>
-
   <p align="center">
     A mini version of Twitter implemented in Ruby & Rails
     <br />
@@ -103,11 +102,15 @@ Here are the following steps below to get started with the website and code:
 ### Prerequisites
 For the code, must have the lastest Ruby and Rails version installed
 </br>
-For a text editor, strongly recommend VS Code
+For the website, have a working email address it will be used to create an account & for password recovery
 ### Website
-1. 
-2. 
-3. 
+1. Click on the link http://cis196-jason-twitter.herokuapp.com
+2. You should see the following menu once the website is loaded:
+  <a href="http://cis196-jason-twitter.herokuapp.com">
+    <img src="" alt="Website Homepage" width="80" height="80">
+  </a>
+3. Once the website is loaded please press the link `Sign Up for Twitter`
+
 ### Code
 1.
 2.
