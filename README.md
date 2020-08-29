@@ -112,7 +112,7 @@ Must have a **working email address** it will be used to create an account & for
 7. Click `People` to find users and follow them
 8. You can view your profile by clicking `Profile` or your avatar picture
 
-View the full [demo](#demo) below to get started and view the full features
+View the [demo](#demo) below to get started and see the full features
 
 ## Demo
 <p align="center">
