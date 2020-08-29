@@ -117,7 +117,6 @@ Here is a list of useful links related to the project:
 * Project website: http://cis196-jason-twitter.herokuapp.com
 * Repository: http://github.com/jasont2022/twitter
 * Issue tracker: http://github.com/jasont2022/twitter/issues
-  * Please be sure to read [CONTRIBUTTING.md](https://github.com/jasont2022/twitter/blob/master/CONTRIBUTING.md) on guidelines and instructions before contributing to this repository.
   * In case of sensitive bugs like security vulnerabilities, please contact jasontran2022@gmail.com directly instead of using issue tracker. We value your effort to improve the security and privacy of this project!
 * Check out [technologies](#technologies) section for a list of amazing gems & technologies used in this project
 
