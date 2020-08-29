@@ -42,7 +42,7 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Website](#website)
-  * [Code](#code)
+* [Demo](#demo)
 * [Links](#links)
 * [License](#license)
 
@@ -97,20 +97,25 @@ Below is a basic schema table for this project, check out `schema.rb` for a deta
 * Followship (self-referring many-to-many association)
 
 ## Getting Started
-Here are the following steps below to get started with the website and code:
+Here are the following steps below to get started with the website:
+
 ### Prerequisites
-For the code, must have the lastest Ruby and Rails version installed
-</br>
-For the website, have a working email address it will be used to create an account & for password recovery
+Must have a **working email address** it will be used to create an account & for password recovery
+
 ### Website
 1. Click on the link http://cis196-jason-twitter.herokuapp.com
-2. You should see the following menu once the website is loaded:
-3. Once the website is loaded, click the link `Sign Up for Twitter`
+2. Once the website is loaded, click the link `Sign Up for Twitter` or `Sign Up` button
+3. Enter the following fields, you may leave `Avatar` field blank, a default profile picture will be given
+4. Click `Sign Up` below the avatar field to create the account
+5. You will be redirected to the `Login` page
+6. Once you `Login` your feed page will be empty
+7. Click `People` to find users and follow them
+8. You can view your profile by clicking `Profile` or your avatar picture
 
-### Code
-1.
-2.
-3.
+View the full [demo](#demo) below to get started and view the full features
+
+## Demo
+
 
 ## Links
 Here is a list of useful links related to the project:
