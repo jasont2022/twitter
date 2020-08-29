@@ -43,7 +43,6 @@
   * [Prerequisites](#prerequisites)
   * [Website](#website)
   * [Code](#code)
-* [Contribute](#contribute)
 * [Links](#links)
 * [License](#license)
 
@@ -112,9 +111,6 @@ For the website, have a working email address it will be used to create an accou
 1.
 2.
 3.
-
-## Contribute
-Any contributions you make are **greatly appreciated**. Contributions may range from reporting bugs, issues, enhancements, and requesting new features. Please be sure to check `CONTRIBUTING.md` on guidelines and instructions before contributing to this repository.
 
 ## Links
 Here is a list of useful links related to the project:
