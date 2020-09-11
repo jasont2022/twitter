@@ -13,9 +13,6 @@
 [![Apache License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# Project Status
-**Currently working on README, Contributing, almost finished**
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -39,6 +36,7 @@
 * [Technologies](#technologies)
 * [Features](#features)
 * [Schema](#schema)
+* [Concepts](#concepts)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Website](#website)
@@ -47,11 +45,12 @@
 * [License](#license)
 
 ## About
-**MiniTwitter** is a simple mini-mock up version of Twitter! The web application is implemented in the Ruby programming language and Rails framework. Below has the following technologies and core features for this project.
+**MiniTwitter** is a simple mini-mock up version of Twitter! The web application is implemented in the Ruby programming language and Rails framework. This full stack web application will have the core features from Twitter such as followship, user account management, and tweets. Below has the full technologies and features for this project listed in detail.
 
 ## Technologies
 This project is created with the following:
 * HTML
+* CSS
 * Ruby
 * Rails 6.0.3
 * [Bootstrap](https://getbootstrap.com/)
@@ -95,6 +94,18 @@ Below is a basic schema table for this project, check out `schema.rb` for a deta
 
 * Users have many Tweets (one-to-many association)
 * Followship (self-referring many-to-many association)
+
+## Concepts
+This project covers the following Ruby, Rails, and web developement concepts listed below:
+
+* many to many 
+* one to many
+* nested resources
+* account session management
+* active storage
+* third party ruby gems
+* HTML & CSS
+* CSS frameworks
 
 ## Getting Started
 Here are the following steps below to get started with the website:
