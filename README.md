@@ -97,10 +97,11 @@ Below is a basic schema table for this project, check out `schema.rb` for a deta
 ## Concepts
 This project covers the following Ruby, Rails, and web developement concepts listed below:
 
-* many to many 
-* one to many
+* many to many association
+* one to many association
 * nested resources
 * account session management
+* validation
 * active storage
 * third party ruby gems
 * HTML & CSS
