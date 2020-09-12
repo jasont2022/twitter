@@ -40,7 +40,6 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Website](#website)
-* [Demo](#demo)
 * [Links](#links)
 * [License](#license)
 
@@ -122,19 +121,6 @@ Must have a **working email address** it will be used to create an account & for
 6. Once you `Login` your feed page will be empty
 7. Click `People` to find users and follow them
 8. You can view your profile by clicking `Profile` or your avatar picture
-
-View the [demo](#demo) below to get started and see the full features
-
-## Demo
-<p align="center">
-<a href="#">
-    <img src=""
-    height="750" width="400"></a>
-</p>
-
-<p align="center">
-Click on image to open Demo
-</p>
 
 ## Links
 Here is a list of useful links related to the project:
